@@ -1,0 +1,31 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "Main Entry web app for env",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "env"
+  ],
+  "author": "Peru",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.16.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "express-session": "^1.15.1",
+    "mongoose": "^4.8.1",
+    "morgan": "^1.8.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "req-flash": "0.0.3",
+    "swagger-jsdoc": "^1.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

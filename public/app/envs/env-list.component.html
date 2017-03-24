@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th>Env Name</th>
+      <th>Url</th>
+      <th>Description</th>
+      <th>Date</th>
+      <th>ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let env of envs" >
+      <td (click)="onSelect(env)">{{env.name}}</td>
+      <td><a (click)="onSelectURL(env)">{{env.url}}</a></td>
+      <td (click)="onSelect(env)">{{env.desc}}</td>
+      <td (click)="onSelect(env)">{{env.date}}</td>
+      <td (click)="onSelect(env)">{{env._id}}</td>
+    </tr>
+  </tbody>
+</table>

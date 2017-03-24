@@ -1,0 +1,27 @@
+<div class="container">
+	<section id="content">
+		<form #f="ngForm" (ngSubmit)="onSubmit()">
+			<h3>Signup Form</h3>
+			<div>
+				<input type="email" [(ngModel)]="user.email" placeholder="Email" name="email" required="" />
+			</div>
+			<div>
+				<input type="password" [(ngModel)]="user.password" placeholder="Password" name="password" required="" />
+			</div>
+			<div>
+				<input type="submit" value="Signup" />
+				<a [routerLink]="['/login']">Already have an account? </a>
+			</div>
+			<br>
+			<br>
+			<div>
+				<h6>{{message}}</h6>
+			</div>
+		</form>
+		<!-- form -->
+
+	</section>
+	<!-- content -->
+
+</div>
+<!-- container -->

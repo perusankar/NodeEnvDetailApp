@@ -1,0 +1,39 @@
+<div *ngIf="env">
+    <table>
+        <tr>
+            <th>
+                {{env.name}} details!
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <label>name: </label>{{env.name}}</div>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <label>Desc: </label>
+                    <input [(ngModel)]="env.desc" placeholder="desc" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <label>Date: </label>
+                    <input [(ngModel)]="env.date" placeholder="date" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+                <button (click)="goBack()">Back</button>
+                <button (click)="save()">Save</button>
+            </td>
+        </tr>
+    </table>
+</div>
